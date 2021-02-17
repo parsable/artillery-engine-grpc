@@ -54,7 +54,7 @@ ArtilleryGRPCEngine.prototype.loadServiceClient = function () {
 }
 
 /**
- * Load test YAML configuration defined at: <config.engines.grpc>
+ * Load test YAML configuration defined at: <config.engines["grpc-js"]>
  */
 ArtilleryGRPCEngine.prototype.getEngineConfig = function () {
   const {
@@ -62,7 +62,7 @@ ArtilleryGRPCEngine.prototype.getEngineConfig = function () {
     protobufDefinition,
     protoLoaderConfig,
     metadata,
-  } = this.script.config.engines.grpc
+  } = this.script.config.engines["grpc-js"]
 
   return {
     channelOpts,

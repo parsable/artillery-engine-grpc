@@ -9,7 +9,7 @@ const script = {
     config: {
       target: 'my_awesome_grpc_host',
       engines: {
-        grpc: {
+        'grpc-js': {
           channelOpts: {
             'grpc.client_idle_timeout_ms': 1000
           },
@@ -24,7 +24,7 @@ const script = {
     scenarios: [
       {
         name: 'Call gRPC unary',
-        engine: 'grpc',
+        engine: 'grpc-js',
         flow: [
           {
             Greet: {
