@@ -1,7 +1,5 @@
 # artillery-engine-grpc
 
-[![npm version](https://badge.fury.io/js/artillery-engine-grpc.svg)](https://badge.fury.io/js/artillery-engine-grpc) ![Publish Node.js Package](https://github.com/kenju/artillery-engine-grpc/workflows/Publish%20Node.js%20Package/badge.svg)
-
 Load test gRPC application with [Artillery.io](https://artillery.io/)
 
 ## Documentation
@@ -20,7 +18,7 @@ For developers:
 
 ```sh
 # if `artillery` is installed globally
-npm install -g artillery-engine-grpc
+npm install @parsable/artillery-engine-grpc
 ```
 
 ### Define your scenario
@@ -78,7 +76,7 @@ config:
         "user-id": u123
 
 scenarios:
-  - name: test backend-service running at http://localhost:8000
+  - name: test backend-service running at http://localhost:8080
     engine: grpc
     flow:
     # list RPC names with its arguments
@@ -102,4 +100,4 @@ artillery run my-scenario.yml
 
 ## License
 
-[MPL-2.0](https://www.mozilla.org/en-US/MPL/2.0/)
+[Apache-2.0](https://www.apache.org/licenses/LICENSE-2.0)

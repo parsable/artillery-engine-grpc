@@ -1,25 +1,22 @@
 {
-  "name": "artillery-engine-grpc",
-  "version": "0.0.7",
+  "name": "@parsable/artillery-engine-grpc",
+  "version": "0.0.1",
   "description": "Load test your gRPC application with Artillery.io",
   "main": "index.js",
-  "scripts": {
-    "test": "node test/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/kenju/artillery-engine-grpc.git"
-  },
+  "repository": "https://github.com/parsable/artillery-engine-grpc",
   "keywords": [
     "artillery",
     "grpc"
   ],
-  "author": "kenju",
-  "license": "MPL-2.0",
-  "bugs": {
-    "url": "https://github.com/kenju/artillery-engine-grpc/issues"
+  "private": true,
+  "publishConfig": {
+    "registry": "https://parsable.jfrog.io/artifactory/api/npm/eng-npm-snapshot-local/"
   },
-  "homepage": "https://github.com/kenju/artillery-engine-grpc#readme",
+  "author": "backend@parsable.com",
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node test/index.js"
+  },
   "dependencies": {
     "@grpc/grpc-js": "^1.2.7",
     "@grpc/proto-loader": "^0.5.6",
