@@ -6,7 +6,7 @@ config:
       arrivalRate: 1
   engines:
     # artillery-engine-grpc's specific configuration
-    grpc:
+    grpc-js:
       # can set grpc-ChannelOptions
       # https://grpc.github.io/grpc/node/grpc.Channel.html
       # the available options are listed at:
@@ -29,14 +29,14 @@ config:
         arrays: false
         objects: false
         oneofs: true
-        includeDirs: [ './protobuf-definitions' ]
+        includeDirs: ["./protobuf-definitions"]
       metadata:
         "user-id": u123
 
 scenarios:
   - name: test backend-service running at http://localhost:8000
     # specify engine's name here
-    engine: grpc
+    engine: grpc-js
     # list RPC names with its arguments
     flow:
       # You can log any prefereed string

@@ -1,5 +1,5 @@
 {
-  "name": "@parsable/artillery-engine-grpc",
+  "name": "artillery-engine-grpc-js",
   "version": "0.0.1",
   "description": "Load test your gRPC application with Artillery.io",
   "main": "index.js",

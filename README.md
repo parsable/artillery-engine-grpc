@@ -18,7 +18,7 @@ For developers:
 
 ```sh
 # if `artillery` is installed globally
-npm install @parsable/artillery-engine-grpc
+yarn add artillery-engine-grpc-js
 ```
 
 ### Define your scenario
@@ -55,7 +55,7 @@ config:
       arrivalRate: 10
       pause: 15
   engines:
-    grpc:
+    grpc-js:
       channelOpts:
         grpc.client_idle_timeout_ms: 1000
       protobufDefinition:
@@ -77,7 +77,7 @@ config:
 
 scenarios:
   - name: test backend-service running at http://localhost:8080
-    engine: grpc
+    engine: grpc-js
     flow:
     # list RPC names with its arguments
     - Hello:
