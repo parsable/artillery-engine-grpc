@@ -34,7 +34,7 @@ config:
         "user-id": u123
 
 scenarios:
-  - name: test backend-service running at http://localhost:8000
+  - name: test backend-service running at http://localhost:8080
     # specify engine's name here
     engine: grpc-js
     # list RPC names with its arguments
