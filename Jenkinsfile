@@ -1,3 +1,6 @@
+#!/usr/bin/env groovy
+@Library('parsable') _
+
 pod(label: 'artillery-engine-grpc').container('node').build {
   stage('Checkout') {
     checkout scm
