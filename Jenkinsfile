@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 @Library('parsable') _
 
-pod(label: 'artillery-engine-grpc').container('node').build {
+pod(label: 'artillery-engine-grpc-js').container('node').build {
   stage('Checkout') {
     checkout scm
   }

@@ -1,4 +1,4 @@
-# artillery-engine-grpc
+# artillery-engine-grpc-js
 
 Load test gRPC application with [Artillery.io](https://artillery.io/)
 

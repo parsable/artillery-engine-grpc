@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Load test your gRPC application with Artillery.io",
   "main": "index.js",
-  "repository": "https://github.com/parsable/artillery-engine-grpc",
+  "repository": "https://github.com/parsable/artillery-engine-grpc-js",
   "keywords": [
     "artillery",
     "grpc"
